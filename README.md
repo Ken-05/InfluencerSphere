@@ -13,7 +13,9 @@ InfluencerSphere recognizes this pivot point. By structuring the creator ecosyst
 We are transforming the subjective, opaque world of influencer marketing into a quantitative, competitive process. 
 
 InfluencerSphere acts as the "League Office" for the creator economy.
+
 Influencers are the "Athletes," receiving data-backed valuation and performance diagnostics.
+
 Brands are the "Clubs," using sophisticated metrics to scout, budget, and acquire the best talent for specific campaigns.
 
 ### Mission
@@ -23,17 +25,23 @@ Our core mission is to replace guesswork with predictive intelligence, enabling 
 ### For Brands (The Clubs)
 
 Objective Market Value Ranking: Filter and search influencers based on a data-backed market valuation derived from their entire performance history (from Agent 4).
+
 PLEP (Post-Level Engagement Potential) Prediction: Predict the expected ROI/engagement for a specific, future content collaboration (from Agent 3).
+
 Real-Time Alerts: Set up custom thresholds to scout emerging talent before their market value spikes.
 
 ### For Influencers (The Athletes)
 
 Content Diagnostics: Input content drafts (caption, image) and receive actionable insights on the predicted PLEP score, showing the top positive and negative feature contributors for instant optimization.
+
 Verifiable Price Justification: Use the objective Market Value Ranking to confidently negotiate fees and prove worth to prospective brand partners.
+
 Niche Strategy Reports: Receive data on niche competition and growth trends to guide long-term content strategy.
 
 ### Technical Architecture
 The platform operates on MLOps principle of Training/Serving Separation.
 Training Environment (scripts/): Runs the heavy data pipeline, performing feature engineering (Agent 1 & 2) and model training (Agent 3 & 4) to create the model artifacts (.joblib files).
+
 Serving Environment (backend/): A high-performance, stateless FastAPI service that loads the pre-trained models on startup and executes inference on demand via dedicated, low-latency API routes (predictions.py).
+
 Data Persistence: Google Firestore is used for storing all application state, user data (alerts), and the structured influencer profiles.
