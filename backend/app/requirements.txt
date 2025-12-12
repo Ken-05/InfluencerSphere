@@ -1,0 +1,40 @@
+# FastAPI & web server
+fastapi
+uvicorn[standard]
+
+# Database
+psycopg2-binary
+
+# ML / NLP
+torch
+torchvision
+transformers
+clip-by-openai
+scikit-learn
+pandas
+numpy
+opencv-python
+Pillow
+
+# Utilities
+requests
+python-dotenv
+apscheduler
+emoji
+
+pydantic
+
+python-jose
+keybert
+spacy
+psycopg2-binary
+python-dotenv
+httpx
+
+
+opencv-python
+numpy
+ftfy
+regex
+tqdm
+clip @ git+https://github.com/openai/CLIP.git
