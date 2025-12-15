@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "influencersphere-backend"
+version = "0.1.0"
+description = "Backend for InfluencerSphere with ML scoring for Instagram influencers"
+authors = ["Ken G"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.0"
+uvicorn = {extras = ["standard"], version = "^0.24.0"}
+sqlalchemy = "^2.0"
+psycopg2-binary = "^2.9"
+torch = "^2.1"
+torchvision = "^0.16"
+transformers = "^4.40"
+clip-by-openai = "^1.0.0"
+scikit-learn = "^1.3"
+pandas = "^2.1"
+numpy = "^1.26"
+opencv-python = "^4.9"
+Pillow = "^10.0"
+requests = "^2.32"
+python-dotenv = "^1.0"
+apscheduler = "^3.11"
+emoji = "^2.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.2"
